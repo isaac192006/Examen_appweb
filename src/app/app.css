@@ -1,0 +1,94 @@
+/* Contenedor principal del formulario */
+.form-contenedor {
+  padding: 2rem;
+}
+
+.label-principal {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-nombre {
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 15px;
+}
+
+.separador {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+/* Estilo para cada fila de producto */
+.item-fila {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.input-producto {
+  flex: 2;
+  padding: 5px;
+}
+
+.input-cantidad {
+  flex: 1;
+  max-width: 80px;
+  padding: 5px;
+}
+
+/* Botones */
+.btn-eliminar {
+  color: red;
+  background: transparent;
+  border: 1px solid red;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-eliminar:hover {
+  background: #fff5f5;
+}
+
+.btn-agregar {
+  background: #2196F3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-guardar {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-guardar:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.container {
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.styled-table
+{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: 'Times New Roman', Times, serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
