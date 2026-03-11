@@ -1,0 +1,83 @@
+/* Contenedor principal para centrar y dar aire */
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Estilo de la tabla */
+.stiled-table {
+  width: 100%;
+  border-collapse: collapse; /* Elimina espacios entre bordes */
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden; /* Para que el radio del borde funcione */
+}
+
+/* Cabecera */
+.stiled-table thead tr {
+  background-color: #6200ee; /* Color morado moderno */
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.stiled-table th, 
+.stiled-table td {
+  padding: 12px 15px;
+}
+
+/* Filas del cuerpo */
+.stiled-table tbody tr {
+  border-bottom: 1px solid #eeeeee;
+  transition: background-color 0.2s ease;
+}
+
+/* Efecto cebra (filas alternas) */
+.stiled-table tbody tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+/* Efecto hover */
+.stiled-table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: default;
+}
+
+/* Estilo para el mensaje de lista vacía */
+.mensaje-vacio {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  padding: 2rem !important;
+}
+
+/* Última fila sin borde */
+.stiled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #6200ee;
+}
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.btn-regresar {
+  border: 2px 
+  solid #e7e7e7;}

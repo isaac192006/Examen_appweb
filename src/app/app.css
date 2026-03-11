@@ -79,16 +79,20 @@
   background-color: #ccc;
   cursor: not-allowed;
 }
-.container {
-  padding: 20px;
-  font-family: 'Times New Roman', Times, serif;
+
+.button {
+  background-color: white; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
-.styled-table
-{
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 0.9em;
-  font-family: 'Times New Roman', Times, serif;
-  min-width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
+
+.btn-ver-tabla{
+  border: 1px 
+  solid #555555;}
