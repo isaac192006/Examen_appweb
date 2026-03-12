@@ -1,20 +1,28 @@
 import { Component } from '@angular/core';
-// Importamos los módulos necesarios para trabajar con formularios reactivos
+// Formularios
 import { FormBuilder, FormGroup, FormArray, Validators, ReactiveFormsModule } from '@angular/forms';
-// Importamos CommonModule para usar directivas comunes como *ngFor y *ngIf
+// Angular básico
 import { CommonModule } from '@angular/common';
-//import { TablaCompras } from './tabla-compras/tabla-compras';
-import { ListaService } from './tabla-compras/lista_server';
+import { BrowserModule } from '@angular/platform-browser';
+// Router
 import { RouterModule, Router } from '@angular/router';
+// Formularios simples
+import { FormsModule } from '@angular/forms';
+// Servicio
+import { ListaService } from './tabla-compras/lista_server';
+import { ProductosComponent } from './productos/productos';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
   standalone: true,
   imports: [
-    ReactiveFormsModule, 
-    CommonModule, 
-    RouterModule], // Importante para que funcione el form
+    ReactiveFormsModule,
+    CommonModule,
+    RouterModule,
+    FormsModule,
+    ProductosComponent
+  ],
   styleUrl: './app.css'
 })
 

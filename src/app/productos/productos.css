@@ -1,0 +1,88 @@
+/* Fondo general de la página */
+body{
+background: linear-gradient(135deg,#fdf6ff,#e7f0ff);
+min-height:100vh;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contenedor principal */
+.container{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Título */
+h2{
+text-align:center;
+color:#7b6cd9;
+font-weight:bold;
+margin-bottom:25px;
+}
+
+/* Inputs */
+.form-control{
+border-radius:10px;
+border:1px solid #e4dbff;
+padding:10px;
+}
+
+/* Animación al seleccionar input */
+.form-control:focus{
+border-color:#cdb4ff;
+box-shadow:0 0 5px #e0d7ff;
+}
+
+/* Botón guardar */
+.btn-primary{
+background:#cdb4ff;
+border:none;
+border-radius:8px;
+padding:8px 18px;
+}
+
+.btn-primary:hover{
+background:#b79cff;
+}
+
+/* Botón editar */
+.btn-warning{
+background:#ffd6a5;
+border:none;
+border-radius:8px;
+}
+
+.btn-warning:hover{
+background:#ffc68a;
+}
+
+/* Botón eliminar */
+.btn-danger{
+background:#ffadad;
+border:none;
+border-radius:8px;
+}
+
+.btn-danger:hover{
+background:#ff9b9b;
+}
+
+/* Tabla */
+.table{
+margin-top:25px;
+border-radius:10px;
+overflow:hidden;
+}
+
+/* Encabezado de tabla */
+.table-dark{
+background:#a0c4ff !important;
+color:#333;
+}
+
+/* Filas */
+.table tbody tr:hover{
+background:#f5f3ff;
+transition:0.2s;
+}

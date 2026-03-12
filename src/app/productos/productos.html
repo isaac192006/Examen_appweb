@@ -1,0 +1,92 @@
+<!-- Contenedor principal usando Bootstrap -->
+<div class="container mt-4">
+
+<!-- Título del sistema -->
+<h2>CRUD de Productos</h2>
+
+<!-- FORMULARIO para crear o actualizar productos -->
+<form (ngSubmit)="guardarProducto()">
+
+<!-- Campo ID -->
+<div class="mb-2">
+<input
+class="form-control"
+placeholder="ID"
+[(ngModel)]="producto.id"
+name="id"
+required>
+</div>
+
+<!-- Campo Nombre -->
+<div class="mb-2">
+<input
+class="form-control"
+placeholder="Nombre"
+[(ngModel)]="producto.nombre"
+name="nombre"
+required>
+</div>
+
+<!-- Campo Precio -->
+<input
+type="number"
+class="form-control"
+placeholder="Precio"
+[(ngModel)]="producto.precio"
+name="precio"
+required>
+
+<!-- Botón que cambia entre Guardar y Actualizar -->
+<button class="btn btn-primary mt-2">
+{{ editando ? 'Actualizar producto' : 'Guardar producto' }}
+</button>
+
+</form>
+
+<!-- TABLA donde se muestran los productos -->
+<table class="table table-striped mt-4">
+
+<!-- Encabezado de la tabla -->
+<thead class="table-dark">
+
+<tr>
+<th>ID</th>
+<th>Nombre</th>
+<th>Precio</th>
+<th>Acciones</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<!-- Recorremos el arreglo de productos -->
+<tr *ngFor="let p of productos; let i = index">
+
+<td>{{p.id}}</td>
+<td>{{p.nombre}}</td>
+<td>{{p.precio}}</td>
+
+<td>
+
+<!-- Botón para editar -->
+<button
+class="btn btn-warning btn-sm me-2"
+(click)="editarProducto(i)">
+Editar
+</button>
+
+<!-- Botón para eliminar -->
+<button
+class="btn btn-danger btn-sm"
+(click)="eliminarProducto(i)">
+Eliminar
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
