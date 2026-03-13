@@ -1,88 +1,91 @@
-/* Fondo general de la página */
+/* Fondo oscuro con degradado azul */
 body{
-background: linear-gradient(135deg,#fdf6ff,#e7f0ff);
+background: linear-gradient(180deg,#0a0f1f,#111a3a);
 min-height:100vh;
 font-family: Arial, Helvetica, sans-serif;
+color:white;
 }
 
-/* Contenedor principal */
+/* Contenedor tipo tarjeta */
 .container{
-background:white;
+background: rgba(255,255,255,0.05);
+backdrop-filter: blur(10px);
 padding:30px;
 border-radius:15px;
-box-shadow:0 8px 20px rgba(0,0,0,0.08);
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
 }
 
 /* Título */
 h2{
 text-align:center;
-color:#7b6cd9;
-font-weight:bold;
+color:#a7c7ff;
+letter-spacing:2px;
 margin-bottom:25px;
 }
 
 /* Inputs */
 .form-control{
-border-radius:10px;
-border:1px solid #e4dbff;
-padding:10px;
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.2);
+color:white;
+border-radius:8px;
+input[type="number"]{
+color:white;
+}
 }
 
-/* Animación al seleccionar input */
+/* Inputs cuando se seleccionan */
 .form-control:focus{
-border-color:#cdb4ff;
-box-shadow:0 0 5px #e0d7ff;
+background:rgba(255,255,255,0.1);
+border-color:#7da8ff;
+box-shadow:0 0 8px #4e7cff;
 }
 
 /* Botón guardar */
 .btn-primary{
-background:#cdb4ff;
+background:#4e7cff;
 border:none;
-border-radius:8px;
-padding:8px 18px;
 }
 
 .btn-primary:hover{
-background:#b79cff;
+background:#6d92ff;
 }
 
 /* Botón editar */
 .btn-warning{
-background:#ffd6a5;
+background:#5a7fff;
 border:none;
-border-radius:8px;
-}
-
-.btn-warning:hover{
-background:#ffc68a;
+color:white;
 }
 
 /* Botón eliminar */
 .btn-danger{
-background:#ffadad;
+background:#2f3b6f;
 border:none;
-border-radius:8px;
-}
-
-.btn-danger:hover{
-background:#ff9b9b;
 }
 
 /* Tabla */
 .table{
 margin-top:25px;
-border-radius:10px;
-overflow:hidden;
+color:white;
 }
 
-/* Encabezado de tabla */
+/* Encabezado tabla */
 .table-dark{
-background:#a0c4ff !important;
-color:#333;
+background:#1c2b5a !important;
 }
 
-/* Filas */
+/* Hover filas */
 .table tbody tr:hover{
-background:#f5f3ff;
-transition:0.2s;
+background:rgba(255,255,255,0.05);
+}
+
+.form-control{
+background: rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.2);
+color:white;
+}
+
+.form-control::placeholder{
+color:#cccccc;
 }
